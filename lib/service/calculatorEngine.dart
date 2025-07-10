@@ -84,9 +84,6 @@ class CalculatorEngine {
   }
 
   // Scientific functions
-  static double sin(double value) => math.sin(value * math.pi / 180);
-  static double cos(double value) => math.cos(value * math.pi / 180);
-  static double tan(double value) => math.tan(value * math.pi / 180);
   static double log(double value) => math.log(value);
   static double sqrt(double value) => math.sqrt(value);
   static double factorial(int n) {

@@ -1,6 +1,6 @@
 import 'package:calculator/service/calculatorEngine.dart';
 import 'package:calculator/model/calculatorHistory.dart';
-import 'package:calculator/service/memoryManager.dart';
+import 'package:calculator/model/memoryManager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -139,15 +139,6 @@ class _CalculatorScreenState extends State<CalculatorScreen>
       double result = 0.0;
 
       switch (function) {
-        case 'sin':
-          result = CalculatorEngine.sin(currentValue);
-          break;
-        case 'cos':
-          result = CalculatorEngine.cos(currentValue);
-          break;
-        case 'tan':
-          result = CalculatorEngine.tan(currentValue);
-          break;
         case 'log':
           result = CalculatorEngine.log(currentValue);
           break;
@@ -479,9 +470,6 @@ class _CalculatorScreenState extends State<CalculatorScreen>
         Expanded(
           child: Row(
             children: [
-              _buildButton('sin', Colors.purple, () => _handleSpecialFunction('sin')),
-              _buildButton('cos', Colors.purple, () => _handleSpecialFunction('cos')),
-              _buildButton('tan', Colors.purple, () => _handleSpecialFunction('tan')),
               _buildButton('log', Colors.purple, () => _handleSpecialFunction('log')),
               _buildButton('√', Colors.purple, () => _handleSpecialFunction('sqrt')),
             ],
@@ -493,9 +481,6 @@ class _CalculatorScreenState extends State<CalculatorScreen>
             children: [
               _buildButton('x²', Colors.purple, () => _handleSpecialFunction('square')),
               _buildButton('x!', Colors.purple, () => _handleSpecialFunction('factorial')),
-              _buildButton('1/x', Colors.purple, () => _handleSpecialFunction('reciprocal')),
-              _buildButton('π', Colors.purple, () => _handleNumberInput('3.14159')),
-              _buildButton('e', Colors.purple, () => _handleNumberInput('2.71828')),
             ],
           ),
         ),
