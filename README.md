@@ -4,7 +4,7 @@ A comprehensive calculator app built with Flutter that demonstrates advanced Dar
 
 ## Screenshots
 
-<div align="center"> <img src="Screenshot_1.png" alt="screenshot1" width="1080"><img src="Screenshot_2.png" alt="screenshot1" width="1080"><img src="Screenshot_3.png" alt="screenshot1" width="1080"> </div>
+<div align="center"> <img src="Screenshot_1.png" alt="screenshot1" width="300"><img src="Screenshot_2.png" alt="screenshot1" width="300"><img src="Screenshot_3.png" alt="screenshot1" width="300"> </div>
 
 ## 📱 Features
 
